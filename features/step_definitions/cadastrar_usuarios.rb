@@ -31,7 +31,6 @@ Dado("que eu desejo cadastrar um novo usuario") do
     puts "login #{@login}"
   end
 
-#URI "http://docs202.ecom.carrefour:8086/api/v1/admin/users"
 # body = {
 #     "name": username,
 #     "login": login,
@@ -55,7 +54,7 @@ Dado("que eu desejo cadastrar um novo usuario") do
 #     end
 # end
 Dado("que eu realize uma consulta de um usuário {string}") do |string|
-    @request = HTTParty.get("http://docs202.ecom.carrefour:8086/api/v1/admin/users",
+    @request = HTTParty.get("http://*******.*******//api/v1/admin/users",
         :query => {name: "teste"},
         :headers => {
             'Authorization' => "Bearer #{$tokenUser}",
