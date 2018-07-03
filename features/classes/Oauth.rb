@@ -2,11 +2,11 @@ class Oauth
 
     def oauth_user
         basic_auth = {
-            :username => "EVA_WEB", 
-            :password => "EVA_WEB_SECRET"
+            :username => "WEB", 
+            :password => "SECRET"
         }
 
-        $request = HTTParty.post("http://docs202.ecom.carrefour:8084/oauth/token",
+        $request = HTTParty.post("http://*******.*******/api/oauth/token",
             :headers => { 
                 'Content-Type' => 'application/json'
                  },

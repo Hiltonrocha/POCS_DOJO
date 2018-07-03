@@ -15,7 +15,7 @@ Dado("que eu desejo cadastrar um novo usuario") do
     "isPicker": false,
     "teamId": 0
 }
-    @request =  HTTParty.post("http://docs202.ecom.carrefour:8086/api/v1/admin/users",
+    @request =  HTTParty.post("http://*******.*******/api/v1/admin/users",
         :body => body.to_json,
             :headers => {
                 'Authorization' => "Bearer #{$tokenUser}",
